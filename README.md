@@ -1,26 +1,41 @@
 # Megaline_Business_Review
  Telecom giant Megaline has hired an analyst. The company offers its clients two prepaid plans, Surf and Ultimate. The commercial department wants to know which of the plans brings in more revenue in order to adjust the advertising budget for 2019
-📞 Megaline Business Review
-This project analyzes customer data for Megaline, a telecom company, to evaluate customer behavior and suggest improvements to business strategies. The analysis covers usage patterns, customer segmentation, and insights into how different plans affect user retention and profitability.
+# 📡 Megaline Plan Revenue Analysis
 
-📚 Table of Contents
-About the Project
+When Megaline, a major telecom provider, wanted to understand which of their two prepaid plans—Surf or Ultimate—generated more revenue, they turned to data. As a newly hired analyst, you’re tasked with delivering insights that will guide the company's advertising strategy.
 
-Installation
-Usage
-Project Structure
-Technologies Used
-Results & Insights
-Contributing
-License
+At first glance, the challenge seems straightforward: analyze 500 clients and determine which plan is more profitable. But as with most real-world data problems, the insights are buried under layers of transformation, aggregation, and statistical inference.
 
-📌 About the Project
-The notebook provides a comprehensive business analysis for Megaline, focused on:
+This project walks through the entire lifecycle of a data analysis task, from raw user activity logs to a final recommendation backed by statistical testing and visual insights.
 
-Identifying patterns in customer calling, texting, and data usage
-Comparing the profitability and appeal of various subscription plans
-Making actionable recommendations based on customer behavior and cost-effectiveness
-This project can assist stakeholders in marketing, retention strategies, and product refinement.
+---
+
+## 🧠 Industry-Ready Skills Demonstrated
+
+| Skill Category | Techniques / Tools Used |
+|----------------|--------------------------|
+| Data Cleaning | Handled missing values, checked duplicates, corrected datatypes |
+| Feature Engineering | Aggregated monthly usage, calculated overages and revenue per user |
+| Statistical Analysis | Performed hypothesis testing using t-tests |
+| Data Visualization | Plotted distributions, trends, and usage comparisons |
+| Communication | Structured storytelling and insights for business stakeholders |
+
+---
+
+## 📁 Data Overview
+
+The analysis uses five main datasets:
+- `users.csv`: client demographics and plan type
+- `calls.csv`: individual call logs
+- `messages.csv`: text message usage
+- `internet.csv`: internet usage per session
+- `plans.csv`: plan specifications and pricing
+
+---
+
+By combining all sources and performing in-depth statistical data analysis, this project identifies not only which plan brings in more revenue—but why. It's a hands-on example of turning messy telecom data into actionable business strategy.
+
+---
 
 🛠 Installation
 Clone this repository or download the .ipynb file
@@ -67,8 +82,17 @@ Seaborn
 Matplotlib
 Scipy / Statsmodels
 
-📊 Results & Insights
-In both the surf and ultimate plan users on average spend 12 minutes or less on calls. Overall the surf plan users make more calls during the year.  The calls tend to increase as the year goes on regardless of plan type chosen. The surf plan uses more GB overall.  In January neither plan is using more than 1000 GB.  However by December surf plan customers are above 5000 GB and ultimate plan as close to 3000 GB.  In the month of December almost 2x usage of GB compared to Ultimate plan.  The usage seems closer in the beginning of the year. Internet traffic increases as the months progress.  Stating in March the number of gB used in surf plan is double than ultimate plan. Ultimate users tend do not surpass their minute or message usage.  However they do sometimes surpass their gB allowances.  Surf users routinely surpass in minutes, messages, and gB (except not in January).  
+## 🔍 Summary of Results
+
+| Key Insight | Outcome |
+|-------------|---------|
+| Plan generating more revenue | **Surf** |
+| Usage trend | Surf users consistently exceed their limits (minutes, texts, GB) |
+| Seasonal behavior | GB usage peaks in December, especially for Surf users |
+| Hypothesis test (plan revenue difference) | p = 0.12 → Not statistically significant |
+| Hypothesis test (NY/NJ revenue difference) | p = 0.03 → Statistically significant difference |
+
+--- 
 
 🤝 Contributing
 Feel free to fork the project, explore alternative business questions, and submit a pull request with your improvements.
