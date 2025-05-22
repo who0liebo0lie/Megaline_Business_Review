@@ -92,7 +92,43 @@ Scipy / Statsmodels
 | Hypothesis test (plan revenue difference) | p = 0.12 → Not statistically significant |
 | Hypothesis test (NY/NJ revenue difference) | p = 0.03 → Statistically significant difference |
 
+What I found was surprising. While the Ultimate plan offers generous allowances, most users stayed within their limits—meaning predictable revenue but few overage fees. The Surf plan, on the other hand, attracted heavy users who routinely exceeded their limits in minutes, messages, and gigabytes, especially as the year progressed. Despite being the cheaper plan, Surf quietly drove higher per-user revenue due to these consistent overages.
+
+But the analysis didn’t stop there. Using hypothesis testing, I evaluated whether the revenue differences between plans were statistically significant—and whether geography played a role. The results: revenue differences between plans weren’t statistically significant overall (p = 0.12), but users from New York and New Jersey showed significantly different spending patterns (p = 0.03), suggesting targeted marketing opportunities.
+
+Throughout the project, I:
+
+Cleaned and structured messy, multi-source data
+
+Engineered features like monthly overages and revenue per user
+
+Built visualizations to track seasonal usage patterns
+
+Performed statistical tests to validate business insights
+
+This wasn’t just an exercise in code—it was an exercise in translating data into strategy.
+
+
 --- 
+## 📊 Visualizations
+
+### Figure 1: Average Monthly Call Duration per Plan  
+![Figure 1](image_0.png)
+
+### Figure 2: Total Minutes Used per Month by Plan  
+![Figure 2](image_1.png)
+
+### Figure 3: Distribution of Monthly Call Counts by Plan  
+![Figure 3](image_2.png)
+
+### Figure 4: Monthly Internet Data Usage in GB  
+![Figure 4](image_3.png)
+
+### Figure 5: Revenue Per User by Plan Over Time  
+![Figure 5](image_4.png)
+
+### Figure 6: Revenue Comparison – NY/NJ vs Other Regions  
+![Figure 6](image_5.png)
 
 🤝 Contributing
 Feel free to fork the project, explore alternative business questions, and submit a pull request with your improvements.
